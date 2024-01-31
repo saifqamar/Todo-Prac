@@ -39,17 +39,17 @@ export default function TodoComponent(props){
 
     return(
         <div className='todo p-3 flex flex-row justify-between items-center  border-b border-gray-500'>
-            <div className='flex gap-x-4 items-center'>
+            <div className='flex gap-x-4 items-center '>
                 <p>{props.index + 1}</p>
                 {!isEdit ? 
                     <div className="">
-                        <h1 className='text-2xl font-bold pb-2'>{props.heading}</h1>
-                        <p className='text-base'>{props.details}</p>
+                        <h1 className='text-xl font-bold pb-2'>{props.heading}</h1>
+                        <p className='text-sm'>{props.details}</p>
                     </div>
                 :
-                    <div className="">
-                        <input id='heading' onChange={handleChange} value={updatedTodo.heading} name="heading" placeholder='Todo Heading' className='px-2 mb-2 bg-gray-800  border-gray-600 outline-none font-medium' type='text' />
-                        <input id='Detail' onChange={handleChange} value={updatedTodo.details} name="details" placeholder='Add Details related to work' className=' px-2 bg-gray-800  border-gray-600 outline-none ' type='text' />
+                    <div className="grow mr-3">
+                        <input id='heading' onChange={handleChange} value={updatedTodo.heading} name="heading" placeholder='Todo Heading' className=' w-full px-2 mb-2 bg-gray-900 hover:bg-gray-900  border-gray-600 outline-none font-medium' type='text' />
+                        <input id='Detail' onChange={handleChange} value={updatedTodo.details} name="details" placeholder='Add Details related to work' className='mr-3 w-full px-2 bg-gray-900 hover:bg-gray-900  border-gray-600 outline-none ' type='text' />
 
                     </div>
                 }
