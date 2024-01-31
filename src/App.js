@@ -52,7 +52,7 @@ function App() {
 
   return (
       <div className='bg-gray-900 h-screen flex flex-col gap-y-4 items-center justify-center text-white'>
-        <div className='bg-gray-800 mx-auto w-6/12 p-5 rounded-lg'>
+        <div className='bg-gray-800 mx-auto w-5/12 p-5 rounded-lg'>
           <h1 className='text-3xl font-bold mx-auto text-center mb-4'>To Do</h1>
           {/* Form */}
           <form onSubmit={handleSubmit} className='flex flex-col gap-y-5'>
@@ -70,7 +70,7 @@ function App() {
         </div>
 
         {/* Todo List */}
-        <div className='todos w-6/12 bg-gray-800 p-5 py-8 rounded-lg'>
+        <div className='todos w-5/12 bg-gray-800 p-5 py-8 rounded-lg'>
           <p className='font-bold text-3xl text-center pb-5'>Todo List</p>
           {todos.length === 0 ? <p className='text-gray-400'>No Items Add somthing you want to do today</p>: <p></p>}
           {
