@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Val2Api } from './context/val2Context';
+import Test from './Test';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Val2Api >
+      <App />
+    </Val2Api>
+    {/* <Test/> */}
   </React.StrictMode>
 );
 
